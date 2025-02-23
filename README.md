@@ -18,12 +18,10 @@
 | **Clean Architecture** | แยกส่วนของโค้ดเป็น Layer: Models, Repositories, Services |
 | **Dependency Injection (DI)** | จัดการการเชื่อมโยงของ Interface และ Implementation |
 
----
 #
 **CsvHelper** เป็นไลบรารี (Library) สำหรับ **.NET** ที่ช่วยในการ **อ่าน (Read)** และ **เขียน (Write)** ข้อมูลในรูปแบบ **CSV (Comma-Separated Values)** ได้อย่างง่ายและมีประสิทธิภาพ 
 
----
-
+#
 ## 🚦 **คุณสมบัติเด่นของ CsvHelper**
 
 1. **ใช้งานง่าย:** สามารถ Map ข้อมูลจาก CSV ไปยัง **C# Class (Model)** โดยตรง
@@ -32,11 +30,11 @@
 4. **ประสิทธิภาพสูง:** ทำงานได้รวดเร็ว แม้กับไฟล์ CSV ขนาดใหญ่
 5. **รองรับวัฒนธรรม (CultureInfo):** ช่วยในการจัดการ **DateTime**, **Number Format** ตามวัฒนธรรมที่ต้องการ
 
-
+#
 
 ## 🚦 **ขั้นตอนการสร้าง Project ExportCsvWebApi แบบ Step by Step**
 
----
+#
 
 ## 🎯 **วัตถุประสงค์**
 สร้าง API ด้วย **C# WebAPI (.NET 8)** สำหรับ **Export ข้อมูลเป็นไฟล์ CSV** โดยใช้ **Template CSV** พร้อมการเชื่อมต่อฐานข้อมูล **In-Memory Database**
@@ -98,7 +96,7 @@ mkdir Controllers Models Repositories Services Data Interfaces Templates
 echo "JANAWAT Report\nDate: {{date}}\nCreate by: {{username}}\nId,Name,Email,CreatedAt" > Templates/CustomerTemplate.csv
 ```
 
----
+#
 
 ## 🧑‍💻 **ขั้นตอนการเขียนโค้ดแบบ Step by Step**
 
@@ -115,7 +113,7 @@ public class Customer
 }
 ```
 
----
+#
 
 ### 2. **Database Context: `AppDbContext.cs`**
 ```csharp
@@ -140,7 +138,7 @@ public class AppDbContext : DbContext
 }
 ```
 
----
+#
 
 ### 3. **Interfaces: `ICustomerRepository.cs` และ `ICsvExportService.cs`**
 ```csharp
@@ -161,7 +159,7 @@ public interface ICsvExportService
 }
 ```
 
----
+#
 
 ### 4. **Repository: `CustomerRepository.cs`**
 ```csharp
@@ -186,7 +184,7 @@ public class CustomerRepository : ICustomerRepository
 }
 ```
 
----
+#
 
 ### 5. **Service: `CsvExportService.cs`**
 ```csharp
@@ -220,7 +218,7 @@ public class CsvExportService : ICsvExportService
 }
 ```
 
----
+#
 
 ### 6. **Controller: `ExportController.cs`**
 ```csharp
@@ -258,7 +256,7 @@ public class ExportController : ControllerBase
 }
 ```
 
----
+#
 
 ### 7. **ตั้งค่าใน `Program.cs`**
 ```csharp
@@ -302,7 +300,7 @@ using (var scope = app.Services.CreateScope())
 app.Run();
 ```
 
----
+#
 
 ## 🚀 **ทดสอบการทำงาน**
 1. รันโปรเจคด้วยคำสั่ง
