@@ -59,7 +59,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory
 mkdir Controllers Models Repositories Services Data Interfaces Templates
 
 # 4. สร้าง Template สำหรับการ Export CSV
-echo "TNI Report\nDate: {{date}}\nCreate by: {{username}}\nId,Name,Email,CreatedAt" > Templates/CustomerTemplate.csv
+echo "JANAWAT Report\nDate: {{date}}\nCreate by: {{username}}\nId,Name,Email,CreatedAt" > Templates/CustomerTemplate.csv
 ```
 
 ---
