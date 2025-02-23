@@ -13,7 +13,6 @@
 |----------------------|---------------------------------------------------------------|
 | **C# .NET 8**       | พัฒนา Web API และจัดการ Dependency Injection                  |
 | **Entity Framework Core (In-Memory)** | ใช้ฐานข้อมูลในหน่วยความจำ (สำหรับการทดสอบ) |
-| **Dapper**          | (ติดตั้งไว้เผื่อการขยายระบบ) สำหรับการเข้าถึงข้อมูลแบบ ORM |
 | **CsvHelper**       | ช่วยในการสร้างไฟล์ CSV อย่างง่าย                              |
 | **Swagger UI**      | สำหรับทดสอบ API ผ่าน Web Interface                           |
 | **Clean Architecture** | แยกส่วนของโค้ดเป็น Layer: Models, Repositories, Services |
